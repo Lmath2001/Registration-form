@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+
+*{
+  box-sizing: border-box;
+  font:inherit;
+  color: inherit;
+
+}
+
+:root{
+  --general-font:'Poppins', sans-serif;
+  --blue-color:#2F80ED;
+}
+
+body{
+ background-color:#73a7eb ;
+  font-family: var(--general-font);
+  margin:0;
+  padding: 0;
+  color:#333;
+}
+
+#container{
+   
+  max-width: 1200px;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 24px 24px;
+}
+
+.registration-form{
+  margin: 0 auto;
+  margin-top: 12px;
+  max-width: 750px;
+  padding: 12px 24px ;
+  display: grid;
+ background-color: white;
+ border-radius: 15px;
+}
+
+h1{
+  margin: 0;
+  padding: 0;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+h3{
+  margin: 0;
+  font-size: 0.8rem;
+  max-width: 600px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+.form h3{
+  margin-top: 10px;
+}
+
+a{
+  color: var(--blue-color);
+  text-decoration: none;
+}
+
+form{
+  margin:16px 0;
+  display: grid;
+  gap: 10px;
+
+}
+
+label{
+  display: block;
+  color:#424242;
+  font-size: 1rem;
+  padding: 3px 0;
+}
+
+input{
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #bdbdbd;
+  outline: none;
+  transition: border-bottom 300ms ease-in-out;
+}
+
+input:focus{
+border-bottom: 1.5px solid var(--blue-color);
+}
+
+.name{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap:20px;
+}
+
+.dob{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap:10px;
+}
+
+.dob label{
+  font-size: 0.9rem;
+}
+
+select{
+  width: 100%;
+  border: none;
+  outline: none;
+}
+
+button{
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+}
+
+.create-btn{
+  font-size: 0.9rem;
+  background: var(--blue-color);
+  color:white;
+  padding:10px 20px;
+  border-radius: 33px;
+  box-shadow: 2px 1px 1px rgb(193, 193, 228);
+  outline: none;
+  transition: background-color 300ms ease-in-out;
+}
+
+.create-btn:hover{
+  background-color: white;
+  color:var(--blue-color);
+}
+
+@media only screen and (max-width:320px){
+  body{
+    background-color: white;
+  }
+}

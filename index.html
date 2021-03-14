@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div id="container">
+      <div class="registration-form">
+        <h1>Create an account</h1>
+        <h3>Already have an account? <a href="#">Sign in</a></h3>
+        <form action="#">
+          <div class="input-details">
+            <label for="email">Email address</label>
+            <input type="email" name="email" id="email" required />
+          </div>
+          <div class="name">
+            <div class="input-details">
+              <label for="firstname">First name</label>
+              <input type="text" id="firstname" />
+            </div>
+
+            <div class="input-details">
+              <label for="lastname">Last name</label>
+              <input type="text" id="lastname" />
+            </div>
+          </div>
+          <div class="input-details">
+            <label for="password">Password</label>
+            <input type="password" id="password" />
+          </div>
+
+          <div class="input-details">
+            <label for="dob">Date of Birth</label>
+            <div class="dob">
+              <div class="month">
+                <label for="month">Month</label>
+                <select name="month" id="month">
+                  <option value="01">01</option>
+                  <option value="02">02</option>
+                  <option value="03">03</option>
+                  <option value="04">04</option>
+                  <option value="05">05</option>
+                  <option value="06">06</option>
+                  <option value="07">07</option>
+                  <option value="08">08</option>
+                  <option value="09">09</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                </select>
+              </div>
+              <div class="day">
+                <label for="day">Date</label>
+                <input type="number" name="date" id="date" min="01" max="31" />
+              </div>
+              <div class="year">
+                <label for="year">Year</label>
+                <input
+                  type="number"
+                  name="year"
+                  id="year"
+                  min="1900"
+                  max="2022"
+                />
+              </div>
+            </div>
+          </div>
+
+          <h3>
+            By clicking Create account, I agree that I have read and accepted
+            the <a href="#">Terms of Use</a> and <a href="#">Privacy Policy.</a>
+          </h3>
+          <button class="create-btn">Create Account</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
