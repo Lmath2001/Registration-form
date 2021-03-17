@@ -65,7 +65,7 @@ a{
 form{
   margin:16px 0;
   display: grid;
-  gap: 10px;
+  gap: 15px;
 
 }
 
@@ -86,6 +86,15 @@ input{
 
 input:focus{
 border-bottom: 1.5px solid var(--blue-color);
+}
+
+.red-border{
+   border-bottom: 1px solid rgb(212, 92, 92);
+}
+
+.incorrect{
+  font-size: 0.7rem;
+  color: rgb(212, 92, 92);
 }
 
 .name{
@@ -138,4 +147,28 @@ button{
   body{
     background-color: white;
   }
+}
+
+.signin-alternative{
+  display: grid;
+  justify-items: center;
+}
+
+h2{
+  font-size: 0.9rem;
+}
+
+.icons{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap:20px;
+}
+
+.icons a{
+  color:black;
+  font-size: 1.3rem;
+}
+
+.icons a:hover{
+  color:var(--blue-color)
 }
